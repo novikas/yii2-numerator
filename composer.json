@@ -1,0 +1,21 @@
+{
+    "name": "novikas/yii2-numerator",
+    "description": "Experemental extension that allows you to numerate whatever in your app",
+    "keywords": ["numerator", "numeration", "db"],
+    "type": "yii2-extension",
+    "license": "CC-0",
+
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": ">=2.0.5"
+    },
+    "config": {
+        "process-timeout": 1800
+    },
+
+    "autoload": {
+        "psr-4": {
+          "novikas\\numerator\\": ""
+        }
+    }
+}
