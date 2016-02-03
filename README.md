@@ -61,7 +61,7 @@ Numerator::createNumerator([
   ** y - will be replaced with current year.
   ** m - will be replaced with current month.
   ** q - will be replaced with current quarter.
-
+* init_val - initial value for number. Numeration will be proceed after this value.
 Current version of code allows only one block with curly brackets, only one sequence of symbol 9 (9999) and this sequence must be placed last.
-init_val - initial value for number. Numeration will be proceed after this value.
+
   
