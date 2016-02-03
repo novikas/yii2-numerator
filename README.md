@@ -49,18 +49,19 @@ Numerator::createNumerator([
   'mask' => '{УК-}999', 
   'init_val' => 55, //'начальный номер, с него продолжится нумерация'
 ]);
-        
-name - unique template name.
-model_class - Class of ActiveRecord model that need to be numerated.
-field - field of model_class instance that contains number.
-type_field - field of model_class instance that contains model type.
-type_value - I suppose that is clear
-mask - numerator's mask
-  {} - text between curly brackets will display as it is.
-  9 - means that this position is reserved as a number.
-  y - will be replaced with current year.
-  m - will be replaced with current month.
-  q - will be replaced with current quarter.
+### Fields description        
+* name - unique template name.
+* model_class - Class of ActiveRecord model that need to be numerated.
+* field - field of model_class instance that contains number.
+* type_field - field of model_class instance that contains model type.
+* type_value - I suppose that is clear
+* mask - numerator's mask
+  ** {} - text between curly brackets will display as it is.
+  ** 9 - means that this position is reserved as a number.
+  ** y - will be replaced with current year.
+  ** m - will be replaced with current month.
+  ** q - will be replaced with current quarter.
+
 Current version of code allows only one block with curly brackets, only one sequence of symbol 9 (9999) and this sequence must be placed last.
 init_val - initial value for number. Numeration will be proceed after this value.
   
