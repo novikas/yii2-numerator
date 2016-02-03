@@ -39,6 +39,7 @@ yii mirate --migrationsPath = @novikas/numerator/migrations
 
 To create new numerator template, you need to call Numerator::createNumerator($config) just once.
 Argument config is an array:
+```php
 Numerator::createNumerator([
   'name' => 'doc_numerator1', 
   'model_class' => 'common\models\Doc', 
@@ -48,6 +49,7 @@ Numerator::createNumerator([
   'mask' => '{УК-}999', 
   'init_val' => 55, //'начальный номер, с него продолжится нумерация'
 ]);
+```
 ### Fields description        
 * name - unique template name.
 * model_class - Class of ActiveRecord model that need to be numerated.
