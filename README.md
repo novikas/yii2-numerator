@@ -47,7 +47,7 @@ Numerator::createNumerator([
   'type_field' => 'type', 
   'type_value' => 1, 	
   'mask' => '{УК-}999', 
-  'init_val' => 55, //'начальный номер, с него продолжится нумерация'
+  'init_val' => 55
 ]);
 ```
 ### Fields description        
