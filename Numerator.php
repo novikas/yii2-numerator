@@ -1,13 +1,16 @@
 <?php
 
-namespace novik\numerator;
+namespace novikas\numerator;
 
 use yii\base\Object;
-use novik\numerator\models\NumeratorTemplate;
 use yii\base\ErrorException;
 use yii\base\InvalidConfigException;
-use novik\numerator\NumeratorMasker;
 use yii\base\yii\base;
+use yii\web\NotFoundHttpException;
+
+use novikas\numerator\models\NumeratorTemplate;
+use novikas\numerator\NumeratorMasker;
+
 /**
  * @property yii\base\Model $lastModel
  * @author Novikov A.S
@@ -111,7 +114,7 @@ class Numerator extends Object
 
 		try {
 				$lastModel = $this->lastModel;
-		} catch (\Exception $e ) {
+		} catch (NotFoundHttpException $e ) {
 				return "";
 		}
 
@@ -134,8 +137,9 @@ class Numerator extends Object
 		}
 
 		$model = $query->one();
+
 		if( is_null($model) ) {
-			throw new \Exception("Last model not found", 404);
+			throw new NotFoundHttpException("Last model not found");
 		}
 
 		return $model;

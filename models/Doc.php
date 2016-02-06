@@ -2,7 +2,7 @@
 
 namespace app\models;
 
-use novik\numerator\Numerator;
+use novikas\numerator\Numerator;
 
 class Doc extends \yii\db\ActiveRecord
 {
@@ -17,7 +17,7 @@ class Doc extends \yii\db\ActiveRecord
 			[['number'], 'default', 'value' => function($value){
 
 				if(isset($this->type, $this->store->type)){
-						$templateName = "doc_{$this->type}{$this->store->type}";
+						$templateName = "doc{$this->type}{$this->store->type}";
 						echo $templateName;
 				}
 				$numerator = Numerator::getNumerator($templateName);

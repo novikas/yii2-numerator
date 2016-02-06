@@ -1,10 +1,10 @@
 <?php
 
-namespace novik\numerator;
+namespace novikas\numerator;
 
 use yii\base\Object;
 use yii\base\InvalidConfigException;
-use novik\numerator\classes\MbString;
+use novikas\numerator\classes\MbString;
 
 /**
  * @property string $maskWithoutChars
