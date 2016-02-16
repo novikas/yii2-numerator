@@ -17,7 +17,7 @@
         "psr-4": {
           "novikas\\numerator\\": ""
         }
-    }
+    },
 
     "extra": {
         "branch-alias": {
